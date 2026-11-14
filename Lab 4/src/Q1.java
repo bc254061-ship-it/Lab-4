@@ -19,16 +19,10 @@ public class Q1 {
             scan.close();
             return;
         }
-
-        if (age == 55) {
-            System.out.println("Ticket charge for age 55 is not specified.");
-            scan.close();
-            return;
-        }
-
+    
         if (typeOfPark.equalsIgnoreCase("Theme Park")) {
 
-            if (age > 55) {
+            if (age >= 55) {
                 ticketCharge = 10;
             }
             else if (age >= 21) {
